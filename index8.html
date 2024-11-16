@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login form</title>
+</head>
+<body>
+<!-- Two-Step Signup Form -->
+<div class="two-step-signup">
+  <h2>Create Your Account</h2>
+  <form id="signup-form">
+      <div class="form-section" id="personal-info">
+          <h3>Step 1: Personal Information</h3>
+          <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+          <button type="button" id="next-btn">Next</button>
+      </div>
+
+      <div class="form-section" id="account-info" style="display:none;">
+          <h3>Step 2: Account Information</h3>
+          <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Choose a username" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Create a password" required>
+          </div>
+          <button type="submit">Sign Up</button>
+      </div>
+  </form>
+  <p>Already have an account? <a href="#">Login here</a>.</p>
+</div>
+
+<style>
+.two-step-signup {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #84fab0, #8fd3f4);
+  border-radius: 10px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+.form-section {
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+button {
+  padding: 10px 20px;
+  background: #42a5f5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #2196f3;
+}
+p {
+  margin-top: 15px;
+}
+a {
+  color: #42a5f5;
+  text-decoration: underline;
+}
+</style>
+
+<script>
+document.getElementById('next-btn').onclick = function() {
+  document.getElementById('personal-info').style.display = 'none';
+  document.getElementById('account-info').style.display = 'block';
+};
+</script>
+
+</body>
+</html>

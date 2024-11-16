@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login form</title>
+</head>
+<body>
+  <!-- Bright Fun Login Form -->
+<div class="fun-login">
+  <h2>Login to Your Account</h2>
+  <form>
+      <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Log In</button>
+      <p><a href="#">Forgot Password?</a></p>
+  </form>
+</div>
+
+<style>
+.fun-login {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  background: #00bcd4;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2022/06/23/17/13/ball-7280265_1280.jpg');
+  background-size: cover;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+input::placeholder {
+  color: #fff;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ff9800;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #fb8c00;
+}
+p {
+  margin-top: 15px;
+}
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Made by all digitized -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login form</title>
+</head>
+<body>
+<!-- Vibrant Card Login Form -->
+<div class="card-login">
+  <h2>Welcome Back!</h2>
+  <p>Please enter your credentials to continue.</p>
+  <form>
+      <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+      <div class="options">
+          <a href="#">Forgot Password?</a>
+          <a href="#">Sign Up</a>
+      </div>
+  </form>
+</div>
+</body>
+</html>
+
+
+<style>
+  .card-login {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background: #4caf50;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  input::placeholder {
+    color: #fff;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #f44336;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #c62828;
+  }
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #fff;
+  }
+  </style>

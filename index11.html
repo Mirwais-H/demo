@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login form</title>
+</head>
+<body>
+<!-- Step-by-Step Signup Process -->
+<div class="step-by-step-signup" style="background-image: url('https://cdn.pixabay.com/photo/2022/06/12/22/48/gradient-7258997_1280.png');">
+  <h2>Join Our Community</h2>
+  <form id="step-signup-form">
+      <div class="form-section" id="signup-step1">
+          <h3>Step 1: Personal Info</h3>
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+          <button type="button" id="to-step2-btn">Next</button>
+      </div>
+
+      <div class="form-section" id="signup-step2" style="display:none;">
+          <h3>Step 2: Account Info</h3>
+          <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" placeholder="Create a password" required>
+          </div>
+          <button type="submit">Sign Up</button>
+      </div>
+  </form>
+</div>
+
+<style>
+.step-by-step-signup {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  color: #333;
+  font-family: 'Verdana', sans-serif;
+  text-align: center;
+}
+.form-section {
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+button {
+  padding: 10px 20px;
+  background: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #388e3c;
+}
+</style>
+
+<script>
+document.getElementById('to-step2-btn').onclick = function() {
+  document.getElementById('signup-step1').style.display = 'none';
+  document.getElementById('signup-step2').style.display = 'block';
+};
+</script>
+
+</body>
+</html>

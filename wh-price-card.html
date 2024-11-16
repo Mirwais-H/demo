@@ -1,0 +1,93 @@
+<!-- pricing_cards_icon.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon-Based Pricing Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            font-size: 40px;
+            color: #4A90E2;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 24px;
+            color: #E94E77;
+            margin: 10px 0;
+        }
+        .btn {
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>Basic</h3>
+            <div class="price">$19/month</div>
+              <p>✔️ 5 Courses</p>
+              <p>✔️ 24/7 Support</p>
+              <p>✔️ Access to Resources</p>
+            <a href="#" class="btn">Choose</a>
+        </div>
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>Standard</h3>
+            <div class="price">$49/month</div>
+            <p>✔️ 15 Courses</p>
+            <p>✔️ 24/7 Support</p>
+            <p>✔️ Access to Resources</p>
+            <p>✔️ Monthly Webinars</p>
+            <a href="#" class="btn">Choose</a>
+        </div>
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>Premium</h3>
+            <div class="price">$99/month</div>
+            <p>✔️ 30 Courses</p>
+            <p>✔️ 24/7 Support</p>
+            <p>✔️ Access to Resources</p>
+            <p>✔️ Monthly Webinars</p>
+            <p>✔️ Personal Coaching</p>
+            <a href="#" class="btn">Choose</a>
+        </div>
+    </div>
+</body>
+</html>

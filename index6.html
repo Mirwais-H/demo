@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login form</title>
+</head>
+<body>
+  <!-- Colorful Gradient Signup Form -->
+<div class="gradient-signup">
+  <h2>Create Your Account</h2>
+  <form>
+      <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a href="#">Login here</a>.</p>
+</div>
+
+<style>
+.gradient-signup {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+input::placeholder {
+  color: #fff;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ff6a88;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #ff5252;
+}
+p {
+  margin-top: 15px;
+}
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+</style>
+
+</body>
+</html>

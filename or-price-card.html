@@ -1,0 +1,87 @@
+<!-- pricing_cards_gradient.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Pricing Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: auto;
+        }
+        .card {
+            background: linear-gradient(120deg, #FFAA65, #FF5E3A);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            color: white;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .btn {
+            background-color: #fff;
+            color: #FF5E3A;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #FFE5B4;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="card">
+            <h3>Basic</h3>
+            <div class="price">$19/month</div>
+            <p>✔️ 5 Courses</p>
+            <p>✔️ 24/7 Support</p>
+            <p>✔️ Access to Resources</p>
+            <a href="#" class="btn">Choose</a>
+        </div>
+        <div class="card">
+            <h3>Standard</h3>
+            <div class="price">$49/month</div>
+            <p>✔️ 15 Courses</p>
+            <p>✔️ 24/7 Support</p>
+            <p>✔️ Access to Resources</p>
+            <p>✔️ Monthly Webinars</p>
+            <a href="#" class="btn">Choose</a>
+        </div>
+        <div class="card">
+            <h3>Premium</h3>
+            <div class="price">$99/month</div>
+            <p>✔️ 30 Courses</p>
+            <p>✔️ 24/7 Support</p>
+            <p>✔️ Access to Resources</p>
+            <p>✔️ Monthly Webinars</p>
+            <p>✔️ Personal Coaching</p>
+            <a href="#" class="btn">Choose</a>
+        </div>
+    </div>
+</body>
+</html>
